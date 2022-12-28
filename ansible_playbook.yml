@@ -1,0 +1,24 @@
+---
+- hosts: all
+  root_user": ec2-user
+  become: yes
+  root_user: root
+  vars: 
+  - interpreter_python = /usr/bin/python
+  tasks:
+  - name: Non-Zero return
+    shell: “ls | grep wp-config.php”
+    ignore_errors: true
+
+  - name: install httpd
+    yum:
+      name: httpd
+      state: latest
+  - name: start httpd
+    service:
+      name: httpd
+      state: started
+  - name: copy file from source to destination
+    copy:
+      src: index.html
+      dest: /var/www/html/
