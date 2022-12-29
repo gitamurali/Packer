@@ -16,6 +16,10 @@
     service:
       name: httpd
       state: started
+  - name: Enable service httpd, and not touch the state
+    service:
+      name: httpd
+      enabled: yes
   - name: copy file from source to destination
     copy:
       src: index.html
