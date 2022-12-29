@@ -3,8 +3,8 @@
   "builders": [
     {
       "type": "amazon-ebs",
-      "access_key": "AKIAVIBYHL3KFDB3WTGR",
-      "secret_key": "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",
+      "access_key": "*********************",
+      "secret_key": "**********************",
       "region": "us-east-1",
       "ami_name": "ubuntu-ingnix-proj",
       "sourse_ami":  "ami-0574da719dca65348",
