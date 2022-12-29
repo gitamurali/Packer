@@ -1,0 +1,16 @@
+packer
+packer init <filename or .>
+      - This command is used to download Packer plugin binaries.
+packer validae <filename or .>
+packer validae -syntax-only <filename or .>
+      - This command is used to validate the syntax and configuration of a template.
+packer inspect .
+      - This command will give us various components of our template.
+packer fmt .
+      - This command will automatiacally set/correct our template if there is any errors or syntax errors in our template.
+packer fix .
+      - This command will make sure to run on new version
+packer build .
+      - This command takes a template and runs all the builds within it in order to generate a set of artifacts
+packer hcl_upgrade file.jason
+      - This command is used to transpile a JSON configuration template to it's formatted HCL2 template
