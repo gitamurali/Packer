@@ -9,8 +9,8 @@ packer {
 }
 
 source "amazon-ebs" "ubuntu" {
-  access_key = "AKIAVIBYHL3KFDB3WTGR"
-  secret_key = "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"
+  access_key = "***************"
+  secret_key = "***********************"
   ami_name      = "aws-ubuntu"
   instance_type = "t2.micro"
   region        = "us-east-1"
